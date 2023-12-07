@@ -10,6 +10,7 @@ $spnew = loadallsp_home();
 $dsdm = loadall();
 $sp10 = loadallsp_home10();
 session_start();
+ob_start();
 
 if (isset($_GET['act']) && $_GET['act'] != "") {
     $act = $_GET['act'];
@@ -75,13 +76,14 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $user= $_POST["user"];
                 $pass= $_POST["pass"];
                 $checkuser=checkuser($user,$pass);
-                if (is_array($checkuser)) {
-                    $_SESSION['user']=$checkuser;
-                    header('Location: index.php');
-                }else{
-                    $thongbao = "Fail";
-                }
-               
+                // $_SESSION['role']=$checkuser;
+               if ($checkuser == 1) {
+                header('Location: admin/index.php');
+               }
+               else {
+                $_SESSION['user'] = 2;
+                header('Location: index.php');
+               }
             }
             break;
             case'edt_taikhoan':

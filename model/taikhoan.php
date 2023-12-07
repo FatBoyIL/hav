@@ -7,7 +7,11 @@ function insert_tk($name, $email, $phone,$address,$pass) {
 
 function checkuser($user,$pass) {
   $sql = "SELECT * FROM user WHERE fullname = '".$user."' AND password_hash =  '".$pass."' ";
-  $sp=pdo_query_one($sql);
-  return $sp;
+  $conn = pdo_get_connection();
+  $stmt = $conn->prepare($sql);
+  $stmt->execute();
+  $result= $stmt->setFetchMode(PDO::FETCH_ASSOC);
+  $kq = $stmt->fetchAll();
+  return $kq[0]['role_id'];
 }
 ?>

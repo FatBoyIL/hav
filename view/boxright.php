@@ -6,8 +6,6 @@
 
                         <?php 
                                 if (isset($_SESSION['user'])) {
-                                    //neu ton tai session
-                                    extract($_SESSION['user']);
                         ?>
                         <div class="row mb10">
                            HI <br>
@@ -19,11 +17,12 @@
                                         <a href="index.php?act=edt_taikhoan">Cập nhật tài  khoản</a>
                                     </li>
                                     <li>
-                                        <a href="admin/index.php">Đăng nhặp admin</a>
-                                    </li>
+                                   <a href="index.php?act=cart">Gio Hang</a>
+                                </li>
                                     <li>
                                         <a href="index.php?act=thoat">Thoát</a>
                                     </li>
+                                    
                                     
                         </div>
                         <?php 
