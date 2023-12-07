@@ -1,0 +1,709 @@
+.boxcenter {
+    width: 70%;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans","AdihausDIN","Helvetica",Arial,sans-serif !important;
+    font-size: 0.8vw;
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mr {
+    margin-right: 2%;
+}
+
+.demo {
+    background-color: red;
+    min-height: 100px;
+}
+.top-bar {
+    color: white;
+    text-align: center;
+    size: 2vw;
+    top: 0;
+    left: 0;
+    padding-top: 8px;
+    width: 100%;
+    height: 30px; /* Điều chỉnh chiều cao của thanh đen */
+    background-color: #000; /* Màu đen */
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.header {
+    background-color: white;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+.header img {
+    max-width: 100px; /* Điều chỉnh kích thước của hình ảnh logo */
+}
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.footer {
+    background-color:black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info, .company-info, .social-media {
+    flex: 1;
+    text-align: left;
+}
+.company-info {
+    padding-right: 30px;
+}
+
+
+.contact-info h3, .company-info h3, .social-media h3 {
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+.contact-info p, .company-info p {
+    margin: 10px 0;
+}
+
+.social-media a {
+    margin: 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    padding-left: 10px;
+    max-width: 40px;
+}
+
+
+.menu {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.menu ul {
+    padding: 3px 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #fff;
+    text-decoration: solid;
+
+}
+
+
+
+.boxleft {
+    float: left;
+    width: 74%;
+}
+
+.boxright {
+    float: left;
+    width: 24%;
+}
+
+.boxtitle {
+    color: #333;
+    background: #eee;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: #ccc 1px solid;
+    font-weight: bold;
+}
+
+.boxcontent {
+    border-left: #ccc 1px solid;
+    border-right: #ccc 1px solid;
+    border-bottom: #ccc 1px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.boxcontent2 {
+    border-left: #ccc 1px solid;
+    border-right: #ccc 1px solid;
+    min-height: 200px;
+    background-color: #eee;
+}
+
+.boxfooter {
+    color: #333;
+    background: #eee;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: #ccc 1px solid;
+    border-right: #ccc 1px solid;
+    border-bottom: #ccc 1px solid;
+
+}
+
+.baner img {
+    min-height: 300%;
+    width: 100%;
+    text-align: center;
+}
+
+.boxgiay {
+    float: left;
+    width: 32%;
+    min-height: 300px;
+    border: 1px #eee solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.boxgiay .img {
+    min-height: 230px;
+    text-align: center;
+}
+.boxgiay a{
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+}
+.boxgiay a:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+.img img {
+    width: 100%;
+}
+
+/* box tai khoan */
+.formuser {
+    line-height: 150%;
+}
+
+.formuser input[type="text"],
+.formuser input[type="pass"],
+.formcontent input[type="text"] {
+    width: 100%;
+    border: #ccc solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.formuser input[type="checkbox"] {
+    border-radius: 5px;
+}
+
+.formuser input[type="submit"],
+.formcontent input[type="submit"],
+.formcontent input[type="reset"],
+.formcontent input[type="button"] {
+    border: #ccc solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.formuser input[type="submit"]:hover,
+.formcontent input[type="submit"]:hover,
+.formcontent input[type="reset"]:hover,
+.formcontent input[type="button"]:hover {
+    background-color: #ccc;
+}
+
+.formuser li a {
+    color: blue;
+    text-decoration: none;
+}
+
+.formuser li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.menudoc ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menudoc ul li {
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px #ccc solid;
+}
+
+.menudoc ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menudoc ul li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.searchbox input[type="text"] {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.top10 img {
+    width: 20%;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid;
+}
+
+.top10 a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 15px;
+
+
+}
+
+.top10 a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* admin */
+.headerA {
+    background-color: rgb(201, 39, 39);
+    border: 1px rgb(238, 239, 238) solid;
+    color: white;
+    border-radius: 5px;
+}
+
+.headerA h1 {
+    margin: 20px 20px;
+    font-size: 1.2vw;
+}
+
+.formtitle {
+    background-color: #ccc;
+    border: 1px rgb(238, 239, 238) solid;
+    color: rgb(107, 105, 105);
+    border-radius: 5px;
+}
+
+.formtitle h1 {
+    margin: 10px 10px;
+    font-size: 0.9vw;
+}
+
+.formcontent {
+    padding: 20px 0px;
+}
+
+.formdsloai table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.formdsloai table th:nth-child(1) {
+    width: 10%;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.formdsloai table th:nth-child(2) {
+    width: 30%;
+    background-color: #ccc;
+}
+
+.formdsloai table th:nth-child(3) {
+    width: 40%;
+    background-color: #ccc;
+}
+
+.formdsloai table th:nth-child(4) {
+    width: 20%;
+    background-color: #ccc;
+}
+
+.formdsloai table td {
+    border: 1px #ccc solid;
+    text-align: center;
+}
+
+.formdssp table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.formdssp table th:nth-child(1) {
+    width: 5%;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.formdssp table th:nth-child(2) {
+    width: 10%;
+    background-color: #ccc;
+}
+
+.formdssp table th:nth-child(3) {
+    width: 20%;
+    background-color: #ccc;
+}
+
+.formdssp table th:nth-child(4) {
+    width: 10%;
+    background-color: #ccc;
+}
+
+.formdssp table th:nth-child(5) {
+    width: 25%;
+    background-color: #ccc;
+}
+
+.formdssp table th:nth-child(6) {
+    width: 30%;
+    background-color: #ccc;
+}
+
+.formdssp table th:nth-child(7) {
+    width: 10%;
+    background-color: #ccc;
+}
+
+.formdssp table td {
+    padding: 10px 20px;
+    border: 1px #ccc solid;
+    text-align: center;
+}
+
+select {
+    padding: 5px 10px;
+    font-size: 0.8vw;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    appearance: none;
+    /* Remove default styling for browsers */
+}
+
+.formcontent textarea[name="description"] {
+    width: 100%;
+    height: 150px;
+    /* Adjust the height as needed */
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    /* Allow vertical resizing */
+}
+
+.formcontent input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+input.search-input{
+    width: 30%;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .custom-image {
+    max-width: 60%; /* Adjust the width of the image as needed */
+    height: auto;
+    float: left;
+    padding-right: 20px;
+}
+
+.product-info {
+    max-width: 40%; /* Adjust the width of the product info as needed */
+    float: left;
+    padding-left: 20px; /* Add some space between the image and product info */
+}
+.product-info h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 5px; /* Decrease the margin-bottom to reduce space */
+}
+
+.product-info h2 {
+    
+    font-size: 1.5em;
+    color:black; /* Adjust the color as needed */
+    margin-bottom: 5px; /* Decrease the margin-bottom to reduce space */
+}
+.description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333; /* Text color for the description */
+    margin-top: 0; /* Remove margin-top */
+    margin-bottom: 20px; /* Adjust margin-bottom as needed */
+}
+/* Add this CSS to your stylesheet */
+/* Add this CSS to your stylesheet */
+/* Add this CSS to your stylesheet */
+.boxgiay .img a img {
+    /* Default styles */
+    transition: transform 0.3s ease-in-out;
+}
+
+.boxgiay:hover .img a img {
+    /* Hover styles */
+    filter: brightness(1.05);
+    transform: scale(1.05);
+}
+/* Trong tệp style.css */
+.price {
+    color: #333; /* Màu chữ */
+    font-weight: bold; /* Độ đậm chữ */
+    font-size: 1.1vw; /* Kích thước chữ */
+    /* Bất kỳ thuộc tính CSS nào khác bạn muốn áp dụng */
+}
+.row.size,
+.row.color {
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+.row.size button,
+.row.color button {
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+.row.size button span,
+.row.color button span {
+    font-size: 12px;
+}
+/* Trong file style.css hoặc tệp CSS của bạn */
+.back-to-home {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #000;
+    color: #fff;
+   
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.row.size button:hover,
+.row.color button:hover {
+    background-color: black;
+    color: white;
+}
+.color button.selected {
+    background-color: #000;
+    color: #f2f2f2; /* Thay đổi màu viền khi được chọn */
+}
+
+.size button.selected {
+    background-color: #000;
+    color: #f2f2f2;  /* Thay đổi màu viền khi được chọn */
+}
+
+.formdangky {
+    line-height: 150%;
+}
+
+/* Style form input fields */
+.formdangky input[type="text"],
+.formdangky input[type="email"],
+.formdangky input[type="password"] {
+    width: 100%;
+    border: #ccc solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+/* Style form buttons */
+.formdangky input[type="submit"],
+.formdangky input[type="reset"] {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formdangky input[type="submit"]:hover,
+.formdangky input[type="reset"]:hover {
+    background-color: #45a049;
+}
+/* CSS for custom cart table */
+.giohang-custom-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+}
+
+.custom-total {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
